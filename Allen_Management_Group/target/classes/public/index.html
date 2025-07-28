@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>PD Generator</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1>Federal Position Description Generator</h1>
+    <form id="pd-form">
+        <label>
+            Job Series:
+            <select id="jobSeries" required>
+                <option value="">Select a job series...</option>
+            </select>
+        </label><br />
+        <label>Component: <input type="text" id="component" required /></label><br />
+        <label>Historical Data: <textarea id="historicalData" required></textarea></label><br />
+        <button type="submit">Generate PD</button>
+    </form>
+    <div id="result" style="white-space: pre-wrap; margin-top: 1rem;"></div>
+    <script src="PD_Script.js"></script>
+</body>
+</html>
